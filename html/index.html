@@ -125,7 +125,7 @@
           <a class="btn btn--ghost" href="#contact">Get in touch</a>
         </div>
         <ul class="hero-meta">
-          <li>MSc Data Science, Liverpool John Moores University</li>
+          <li>MSc Data Science (Merit), Liverpool John Moores University</li>
           <li>BSc Computer Science, Olabisi Onabanjo University</li>
           <li>Liverpool, UK</li>
         </ul>
@@ -246,7 +246,7 @@
           <p class="project-index"><span class="num">01</span> / MSc Dissertation</p>
           <h3 id="p1-title">Event-Driven Simulation of Capacity Management and Care Pathways for Dog Rehoming</h3>
           <p class="project-summary">
-            A discrete-event simulation of Dogs Trust's rehoming operations, built on 134,645 records
+            A discrete-event simulation of Dogs Trust's rehoming operations, built on operational data
             extracted from their Salesforce CRM under a formal data sharing agreement. Five operational
             scenarios were modelled to find which combinations of changes produce the greatest
             improvement in throughput and welfare outcomes.
@@ -269,18 +269,18 @@
 
           <details class="project-details">
             <summary>
-              Findings &amp; methodology
+              Methodology &amp; partnership
               <span class="disclosure-icon" aria-hidden="true"></span>
             </summary>
             <div class="details-panel">
-              <h4>Key findings</h4>
+              <h4>Methodology</h4>
               <ul>
-                <li>Long-term dogs are just <strong>7.3%</strong> of the population but consume <strong>40.6%</strong> of all kennel days at roughly <strong>13×</strong> the per-dog resource cost — a composition problem, not a capacity problem.</li>
-                <li>Combined foster expansion and longest-stay prioritisation rehomes approximately <strong>286 additional dogs per year</strong>, reducing mean length of stay by <strong>5.50 days</strong> (p&nbsp;&lt;&nbsp;0.001).</li>
-                <li>Three operational data gaps were documented — including a corrupted Dog ID field and missing adoption end dates — resolved through sensitivity analysis rather than silent adjustment.</li>
+                <li>Discrete-event simulation built in Python using SimPy, with Markov chain transition probabilities and fitted stage-duration distributions (Gamma, Log-normal, Exponential) derived from CRM records.</li>
+                <li>Monte Carlo replication (100 runs per scenario) with 95% confidence intervals; scenario significance tested with one-sample t-tests.</li>
+                <li>Five scenarios simulated: baseline capacity sweep, foster network expansion, longest-stay prioritisation, combined intervention, and direct-rehoming support.</li>
               </ul>
               <h4>Partnership &amp; supervision</h4>
-              <p>Conducted in partnership with Dogs Trust's Behaviour Services Research Team; supervised by Dr Jon Bielby, Liverpool John Moores University. Publication pending Dogs Trust confirmation — results available on request.</p>
+              <p>Conducted in partnership with Dogs Trust's Behaviour Services Research Team; supervised by Dr Jon Bielby, Liverpool John Moores University. Results pending Dogs Trust publication confirmation — available on request.</p>
             </div>
           </details>
         </div>
@@ -775,7 +775,7 @@
     <div class="container spotlight-grid">
       <div class="spotlight-copy reveal">
         <p class="eyebrow">Research spotlight</p>
-        <h2 id="research-heading">Capacity, care, and 134,645 records.</h2>
+        <h2 id=”research-heading”>Capacity, care, and operational data.</h2>
         <p>
           For the MSc dissertation, Amiola built a discrete-event simulation of
           <strong>Dogs Trust's</strong> rehoming operations — one of the UK's largest animal
@@ -785,40 +785,18 @@
         <p>
           Rather than asking “do we have enough kennels?”, the model tested a harder question:
           <strong>which combination of operational changes actually moves outcomes?</strong>
-          Five scenarios were simulated, from staffing shifts to foster-network expansion.
+          Five scenarios were simulated across foster-network expansion, longest-stay prioritisation,
+          and direct-rehoming support — evaluated using Monte Carlo replication and significance testing.
         </p>
-        <dl class="stat-row">
-          <div>
-            <dt>Long-stay share of population</dt>
-            <dd>7.3%</dd>
-          </div>
-          <div>
-            <dt>Share of kennel days consumed</dt>
-            <dd>40.6%</dd>
-          </div>
-          <div>
-            <dt>Per-dog resource cost</dt>
-            <dd>~13×</dd>
-          </div>
-          <div>
-            <dt>Additional dogs rehomed / year</dt>
-            <dd>+286 <span>combined scenario</span></dd>
-          </div>
-          <div>
-            <dt>Mean length of stay</dt>
-            <dd>−5.50 days <span>p &lt; 0.001</span></dd>
-          </div>
-        </dl>
         <p>
-          The central insight was structural: long-term dogs are a small share of the population
-          but a large share of resource use — <strong>a composition problem, not a capacity problem</strong>.
-          Three operational data gaps, including a corrupted Dog ID field and missing adoption end
-          dates, were documented and handled through sensitivity analysis rather than silent adjustment.
+          The simulation was calibrated against Dogs Trust's historical records using Markov chain
+          transition probabilities and fitted stage-duration distributions, with sensitivity analysis
+          applied to key model parameters to ensure robustness.
         </p>
         <p>
           Conducted in partnership with Dogs Trust's Behaviour Services Research Team and supervised
-          by <strong>Dr Jon Bielby</strong> at Liverpool John Moores University. Publication pending
-          Dogs Trust confirmation — results available on request.
+          by <strong>Dr Jon Bielby</strong> at Liverpool John Moores University. Results pending
+          Dogs Trust publication confirmation — available on request.
         </p>
       </div>
 
@@ -932,9 +910,9 @@
         <p class="eyebrow">About</p>
         <h2 id="about-heading">About Amiola</h2>
         <p>
-          Amiola Onabanjo is a data science candidate at <strong>Liverpool John Moores University</strong>
-          (MSc Data Science, predicted Distinction) and holds a <strong>BSc in Computer Science</strong>
-          from <strong>Olabisi Onabanjo University</strong>. He is based in Liverpool, UK.
+          Amiola Onabanjo holds an <strong>MSc in Data Science</strong> from Liverpool John Moores University
+          (Merit, 2026) and a <strong>BSc in Computer Science</strong> from Olabisi Onabanjo University.
+          He is based in Liverpool, UK.
         </p>
         <p>
           His work spans simulation modelling, machine learning, natural-language processing,
@@ -946,7 +924,7 @@
         <ul class="about-facts">
           <li>
             <span class="fact-label">Study</span>
-            <span class="fact-value">MSc Data Science, Liverpool John Moores University</span>
+            <span class="fact-value">MSc Data Science (Merit, 2026), Liverpool John Moores University</span>
           </li>
           <li>
             <span class="fact-label">Prior</span>
